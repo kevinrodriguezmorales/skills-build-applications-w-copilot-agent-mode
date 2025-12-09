@@ -14,10 +14,24 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+
+import os
 from django.contrib import admin
 from django.urls import path, include
+from django.http import JsonResponse
+
+
+# Endpoint para mostrar la URL base de la API usando $CODESPACE_NAME
+def api_root(request):
+    codespace_name = os.environ.get('CODESPACE_NAME', 'localhost')
+    api_url = f"https://{codespace_name}-8000.app.github.dev/api/"
+    return JsonResponse({
+        "api_base_url": api_url,
+        "example_activities_url": api_url + "activities/"
+    })
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('octofit_tracker.api_urls')),
+    path('api/', api_root),
 ]
