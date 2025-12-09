@@ -1,0 +1,112 @@
+
+body {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #f5f6fa;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #232526 !important;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #f5f6fa !important;
+  font-weight: 600;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.navbar-nav .nav-link.active {
+  color: #00d8ff !important;
+}
+
+h2, h3, h4, h5 {
+  color: #00d8ff;
+  font-weight: 700;
+}
+
+a, .App-link {
+  color: #00d8ff;
+  text-decoration: none;
+}
+a:hover, .App-link:hover {
+  color: #f5f6fa;
+  text-decoration: underline;
+}
+
+.table {
+  background: #2c2f34;
+  color: #f5f6fa;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.table thead {
+  background: #00d8ff;
+  color: #232526;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background: #232526;
+}
+
+.btn, .btn-primary {
+  background: #00d8ff;
+  color: #232526;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  transition: background 0.2s;
+}
+.btn:hover, .btn-primary:hover {
+  background: #009ec3;
+  color: #fff;
+}
+
+.card {
+  background: #232526;
+  color: #f5f6fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.modal-content {
+  background: #2c2f34;
+  color: #f5f6fa;
+}
+
+/* Logo octofitapp-small alineado a la izquierda */
+.octofit-logo {
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-bottom: 56px;
+}
+
+aside.bg-dark {
+  background: #232526 !important;
+  min-height: 100vh;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+}
+.nav-link {
+  color: #f5f6fa !important;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.nav-link.active {
+  color: #00d8ff !important;
+}
+.btn-primary {
+  background: #00d8ff;
+  color: #232526;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: #009ec3;
+  color: #fff;
+}
